@@ -1,5 +1,7 @@
 # Automatic tests
 
-After completing all the steps in the project, automatic tests will become available to you. Tests are run on each commit - once all tasks in the Hexlet interface are completed, make a commit, and the tests will run automatically.
+This mini‑app can generate passwords and check their strength.
 
-The hexlet-check.yml file is responsible for running these tests - do not delete this file, edit it, or rename the repository.
+It generates a password consisting exclusively of lowercase letters and, if necessary, adds uppercase letters, numbers, and symbols.
+
+Password verification is carried out according to the same criteria. 
