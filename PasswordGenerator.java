@@ -1,17 +1,14 @@
-public class PasswordGenerator{
+public class PasswordGenerator {
     private static final String LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
     private static final String UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String DIGITS = "0123456789";
     private static final String SPECIAL = "!@#$%^&*";
 
-    public static String generatePassword(int length, long seed,
-                                          boolean useUppercase,
-                                          boolean useDigits,
-                                          boolean useSpecial) {
+    public static String generatePassword(int length, long seed, boolean useUppercase, boolean useDigits, boolean useSpecial) {
         String alphabet = LOWERCASE;
         if (useUppercase) alphabet = alphabet + UPPERCASE;
-        if (useDigits)    alphabet = alphabet + DIGITS;
-        if (useSpecial)   alphabet = alphabet + SPECIAL;
+        if (useDigits) alphabet = alphabet + DIGITS;
+        if (useSpecial) alphabet = alphabet + SPECIAL;
 
         int len = alphabet.length();
         StringBuilder result = new StringBuilder();
@@ -51,7 +48,7 @@ public class PasswordGenerator{
         if (hasSpecial) score++;
 
         String verdict;
-        if (score <= 2)      verdict = "Слабый";
+        if (score <= 2) verdict = "Слабый";
         else if (score == 3) verdict = "Средний";
         else if (score == 4) verdict = "Надёжный";
         else                 verdict = "Очень надёжный";
