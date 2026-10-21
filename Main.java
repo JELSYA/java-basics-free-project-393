@@ -4,7 +4,7 @@ public class Main {
         System.out.println("буквы и цифры:    " + PasswordGenerator.generatePassword(12, 123L, true, true, false));
         System.out.println("со спецсимволами: " + PasswordGenerator.generatePassword(16, 7L, true, true, true));
 
-        System.out.println("");
+        System.out.println();
         System.out.println("== Проверка надёжности ==");
         System.out.println("abc        -> " + PasswordGenerator.checkPassword("abc"));
         System.out.println("abcdef1234 -> " + PasswordGenerator.checkPassword("abcdef1234"));
